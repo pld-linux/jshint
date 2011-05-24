@@ -1,0 +1,10 @@
+--- jshint-20110416/env/rhino.js~	2011-04-16 20:03:44.000000000 +0300
++++ jshint-20110416/env/rhino.js	2011-05-24 09:18:49.461000189 +0300
+@@ -1,6 +1,6 @@
+ /*jshint boss: true */
+ 
+-load("jshint.js");
++load("/usr/share/jshint/jshint.js");
+ 
+ (function (args) {
+     var name   = args[0],

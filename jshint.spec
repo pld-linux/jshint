@@ -10,6 +10,7 @@ URL:		http://www.jshint.com/
 Source0:	https://github.com/jshint/jshint/tarball/%{subver}#/%{name}-%{version}.tgz
 Source1:	%{name}.sh
 # Source0-md5:	5bfdc95c06e0ceefd9f185e421432424
+Patch0:		path.patch
 Requires:	java-rhino
 Requires:	jpackage-utils
 BuildArch:	noarch
@@ -27,6 +28,7 @@ to execute in.
 %prep
 %setup -qc
 mv *-jshint-*/* .
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
